@@ -71,7 +71,7 @@ def lang(message, userLanguage, called=False, greet=False):
 #: Markup for non subscribed users
 def notSubscribedMarkup(userLanguage):
     markup = telebot.types.InlineKeyboardMarkup([[
-            telebot.types.InlineKeyboardButton(text=language['joinChannelBtn'][userLanguage], url='https://t.me/h9youtube'),
-            telebot.types.InlineKeyboardButton(text=language['subscribeChannelBtn'][userLanguage], url='https://www.youtube.com/h9youtube?sub_confirmation=1'),
+            telebot.types.InlineKeyboardButton(text=language['joinChannelBtn'][userLanguage], url='https://t.me/jetbots'),
+            telebot.types.InlineKeyboardButton(text=language['subscribeChannelBtn'][userLanguage], url='https://t.me/jetbots'),
             ]])
     return markup
