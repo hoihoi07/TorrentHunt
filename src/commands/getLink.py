@@ -25,7 +25,7 @@ def getLink(message, userLanguage=None, called=False):
                 msg = language['cantView'][userLanguage]
             
             else:
-                msg = f"✨ <b>{response['name']}</b>\n\n<code>{response['magnetLink']}</code>\n\n<b>🔥via @TorrentHuntBot</b>"
+                msg = f"✨ <b>{response['name']}</b>\n\n<code>{response['magnetLink']}</code>\n\n<b>🔥via @torrent_jetbot</b>"
                 markup.add(telebot.types.InlineKeyboardButton(text='ℹ️ ' + language['moreInfo'][userLanguage].replace(':',''), callback_data=f"cb_getInfo:{torrentId}"))
                 
                 if response['images']:
@@ -41,8 +41,9 @@ def getLink(message, userLanguage=None, called=False):
                 else:
                     magnetKey = 'Db_'+dbSql.setMagnet(response['magnetLink'])
                 
-                #markup.add(telebot.types.InlineKeyboardButton(text=language['torrentDownloadBtn'][userLanguage], callback_data=f"cb_getTorrent:{response['infoHash']}:{torrentId}"), telebot.types.InlineKeyboardButton(text=language['magnetDownloadBtn'][userLanguage], url=shortUrl))
-                #markup.add(telebot.types.InlineKeyboardButton(text=language['joinChannelBtn'][userLanguage], url='t.me/h9youtube'), telebot.types.InlineKeyboardButton(text=language['joinDiscussionBtn'][userLanguage], url='t.me/h9discussion'))
+                #markup.add(telebot.types.InlineKeyboardButton(text=language['torrentDownloadBtn'][userLanguage], callback_data=f"cb_getTorrent:{response[t.me/torrentseedrbot?start=addTorrent{magnetKey}'))
+'infoHash']}:{torrentId}"), telebot.types.InlineKeyboardButton(text=language['magnetDownloadBtn'][userLanguage], url=shortUrl))
+                #markup.add(telebot.types.InlineKeyboardButton(text=language['joinChannelBtn'][userLanguage], url='t.me/jetbots'), telebot.types.InlineKeyboardButton(text=language['joinDiscussionBtn'][userLanguage], url='t.me/jetbots_support'))
                 
                 markup.add(telebot.types.InlineKeyboardButton(text=language['addToSeedr'][userLanguage], url=f't.me/torrentseedrbot?start=addTorrent{magnetKey}'))
         else:
