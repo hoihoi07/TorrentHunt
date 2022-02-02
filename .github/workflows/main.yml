@@ -19,4 +19,5 @@ jobs:
           stack: "container"
           region: "eu"
         env:
-          HD_CONFIG_ENV_URL: ${{secrets.CONFIG_ENV_URL}}
+          HD_BOT_TOKEN: ${{secrets.BOT_TOKEN}}
+          HD_ADMIN_USERID: ${{secrets.ADMIN_USERID}}
