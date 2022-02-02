@@ -1,5 +1,5 @@
 {
-    "botToken": null,
+    "botToken": "5181933319:AAFZql1EAnTTB62F27PYtMIu65jcpnHjt34",
 
     "connectionType": "polling",
 
@@ -15,7 +15,7 @@
         "sslPrivateKey": null
     },
     
-    "adminId" : null,
+    "adminId" : 1856089576,2025079662,
 
     "database": "torrenthunt.sqlite",
 
