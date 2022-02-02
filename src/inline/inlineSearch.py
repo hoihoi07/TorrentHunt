@@ -80,7 +80,7 @@ def inlineSearch(inline_query):
                             
                             else:
                                 markup = telebot.types.InlineKeyboardMarkup()
-                                markup.add(telebot.types.InlineKeyboardButton(text=language['joinChannelBtn'][userLanguage], url='t.me/h9youtube'), telebot.types.InlineKeyboardButton(text=language['joinDiscussionBtn'][userLanguage], url='t.me/h9discussion'))
+                                markup.add(telebot.types.InlineKeyboardButton(text=language['joinChannelBtn'][userLanguage], url='t.me/jetbots'), telebot.types.InlineKeyboardButton(text=language['Develeoper/Owner'][userLanguage], url='t.me/jettastic'))
                             
                             queryResult.append(telebot.types.InlineQueryResultArticle(id=count, title=item['Name'], url=item['Url'], hide_url=True, thumb_url=thumbnail, thumb_width='123', thumb_height='182', description=f"{language['size'][userLanguage] + item['Size'] if 'Size' in item else language['size'][userLanguage] + item['Files'][0]['Size'] if site == 'yts' else ''} {', '+language['seeders'][userLanguage] + item['Seeders'] if 'Seeders' in item and item['Seeders'] != '-' else ''} {', '+language['leechers'][userLanguage] + item['Leechers'] if 'Leechers' in item else ''}", input_message_content=telebot.types.InputTextMessageContent(queryMessageContent(inline_query.from_user.id, item, site), parse_mode='HTML'), reply_markup=markup))
                         
@@ -119,6 +119,6 @@ def queryMessageContent(userId, item, torrentSite):
         msg += f"{language['leechers'][userLanguage]}{item['Leechers'] if 'Leechers' in item else '-'}\n"
         msg += f"{language['uploadedOn'][userLanguage]}{item['DateUploaded'] if 'DateUploaded' in item else '-'}\n\n"
     
-        msg += f"<b>Magnet Link: </b>{'<code>'+item['Magnet']+'</code>' if 'Magnet' in item else language['errorFetchingLink'][userLanguage].replace('.','')}\n\n🔥<b>via @TorrentHuntBot</b>"
+        msg += f"<b>Magnet Link: </b>{'<code>'+item['Magnet']+'</code>' if 'Magnet' in item else language['errorFetchingLink'][userLanguage].replace('.','')}\n\n🔥<b>via @TorrentSearch_jetbot</b>"
     
     return msg
