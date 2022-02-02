@@ -73,6 +73,6 @@ def result(response, userLanguage, resultType, torrentType, page, category=None,
     
     else:
         if msg:
-            markup.add(telebot.types.InlineKeyboardButton(text='🌟 Rate ', url='https://t.me/jetbots'), telebot.types.InlineKeyboardButton(text=language['donateBtn'][userLanguage], url='https://t.me/jettastic'))
+            markup.add(telebot.types.InlineKeyboardButton(text='🌟 Rate ', url='https://t.me/jetbots'), telebot.types.InlineKeyboardButton(text=language['Developer/Owner'][userLanguage], url='https://t.me/jettastic'))
     
     return msg, markup
